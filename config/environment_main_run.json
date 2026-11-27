@@ -1,0 +1,103 @@
+{
+  "fecha": "2026-11-18T11:48:25",
+  "chip": "Apple M4",
+  "ram_GB": 16.0,
+  "nucleos_fisicos": "10",
+  "nucleos_rendimiento": "4",
+  "nucleos_eficiencia": "6",
+  "macOS": "27.0.1",
+  "python": "3.11.18",
+  "paquetes": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.9.0",
+    "torch": "2.15.0",
+    "transformers": "5.23.0",
+    "pyctcdecode": "0.5.0",
+    "kenlm": "0.3.0",
+    "numpy": "1.26.4"
+  },
+  "config": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "language": "es",
+    "temperatures": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "seed": 42,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": true,
+    "cpu_threads": 0,
+    "warmup_s": 10.0,
+    "checkpoints": {
+      "tiny": "Systran/faster-whisper-tiny",
+      "base": "Systran/faster-whisper-base",
+      "small": "Systran/faster-whisper-small",
+      "medium": "Systran/faster-whisper-medium",
+      "large-v2": "Systran/faster-whisper-large-v2",
+      "large-v3": "Systran/faster-whisper-large-v3",
+      "large-v3-turbo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo"
+    },
+    "rules": {
+      "max_duration": 7.0,
+      "target_duration": 5.0
+    },
+    "une": {
+      "max_cpl": 37,
+      "max_lines": 2,
+      "max_cps": 15.0,
+      "min_dur": 1.0,
+      "max_dur": 6.0,
+      "pause_split": 0.7
+    }
+  },
+  "argumentos": {
+    "videos": "VIDEOS_",
+    "out": "SALIDAS_M4",
+    "models": [
+      "tiny",
+      "base",
+      "small",
+      "medium",
+      "large-v2",
+      "large-v3",
+      "large-v3-turbo",
+      "wav2vec2"
+    ],
+    "prompt_models": [
+      "small",
+      "large-v3",
+      "large-v3-turbo"
+    ],
+    "only_videos": null,
+    "cpu_threads": 0,
+    "force": false,
+    "check_determinism": false,
+    "resegment_only": false,
+    "dry_run": false
+  },
+  "prompt_inicial": "Transcripción de contenido sobre accesibilidad y tecnología. Palabras clave: CESyA, UC3M, RPD, CEACOG, accesibilidad, subtitulado, transcripción, audiodescripción, tecnología.",
+  "duraciones_s": {
+    "1": 89.68,
+    "10": 45.21,
+    "11": 271.58,
+    "12": 117.4,
+    "13": 109.8,
+    "14": 90.74,
+    "15": 62.81,
+    "2": 60.28,
+    "3": 59.91,
+    "4": 121.7,
+    "5": 142.43,
+    "6": 153.81,
+    "7": 84.52,
+    "8": 85.96,
+    "9": 34.48
+  }
+}

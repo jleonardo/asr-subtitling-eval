@@ -1,0 +1,10 @@
+# ASR runs (scripts/rerun_controlled.py, scripts/punctuation_restoration_wav2vec.py, scripts/check_whisper.py)
+# Versions recorded in the main run (config/environment_main_run.json). ffmpeg is also required.
+faster-whisper==1.2.1
+ctranslate2==4.9.0
+torch==2.15.0
+transformers==5.23.0
+pyctcdecode==0.5.0
+kenlm==0.3.0
+numpy==1.26.4
+punctuators>=0.0.7

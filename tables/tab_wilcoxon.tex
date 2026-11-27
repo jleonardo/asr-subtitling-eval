@@ -1,0 +1,137 @@
+\begin{table*}[!t]
+\centering
+\caption{Pairwise Wilcoxon comparisons significant after Holm correction ($p_{Holm}<0.05$), with effect size $r$.}
+\label{tab:wilcoxon}
+\scriptsize
+\renewcommand{\arraystretch}{1.0}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\begin{tabular}{@{}l l c c@{}}
+\toprule
+\textbf{Metric} & \textbf{Pairwise comparison} & \textbf{Holm $p$} & \textbf{$r$} \\
+\midrule
+\multirow{18}{*}{WER ($\downarrow$)}
+ & Tiny vs. Base & 0.0022 & 0.88 \\
+ & Tiny vs. Small & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v1 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v2 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Base vs. Large-v3-turbo & 0.0033 & 0.87 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0033 & 0.87 \\
+ & Tiny vs. Large-v3 & 0.0046 & 0.85 \\
+ & Base vs. Large-v1 & 0.0073 & 0.84 \\
+ & Wav2Vec2 vs. Medium & 0.0073 & 0.84 \\
+ & Tiny vs. Medium & 0.0134 & 0.81 \\
+ & Base vs. Large-v3 & 0.0244 & 0.78 \\
+ & Base vs. Small & 0.0265 & 0.83 \\
+ & Base vs. Large-v2 & 0.0307 & 0.81 \\
+\midrule
+\multirow{11}{*}{CER ($\downarrow$)}
+ & Tiny vs. Base & 0.0022 & 0.88 \\
+ & Tiny vs. Small & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v1 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v2 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0035 & 0.87 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0120 & 0.82 \\
+ & Tiny vs. Large-v3 & 0.0165 & 0.81 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0302 & 0.78 \\
+\midrule
+\multirow{16}{*}{Punc-WER ($\downarrow$)}
+ & Tiny vs. Base & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Medium & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v1 & 0.0035 & 0.87 \\
+ & Tiny vs. Small & 0.0051 & 0.85 \\
+ & Tiny vs. Large-v2 & 0.0051 & 0.85 \\
+ & Tiny vs. Large-v3 & 0.0051 & 0.85 \\
+ & Base vs. Wav2Vec2 & 0.0076 & 0.84 \\
+ & Tiny vs. Large-v3-turbo & 0.0173 & 0.87 \\
+ & Tiny vs. Medium & 0.0197 & 0.79 \\
+ & Base vs. Large-v3-turbo & 0.0255 & 0.78 \\
+ & Base vs. Small & 0.0423 & 0.75 \\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\begin{tabular}{@{}l l c c@{}}
+\toprule
+\textbf{Metric} & \textbf{Pairwise comparison} & \textbf{Holm $p$} & \textbf{$r$} \\
+\midrule
+\multirow{15}{*}{PC-WER ($\downarrow$)}
+ & Tiny vs. Base & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Medium & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v1 & 0.0035 & 0.87 \\
+ & Tiny vs. Large-v3-turbo & 0.0035 & 0.87 \\
+ & Tiny vs. Small & 0.0049 & 0.85 \\
+ & Tiny vs. Large-v2 & 0.0049 & 0.85 \\
+ & Base vs. Wav2Vec2 & 0.0076 & 0.84 \\
+ & Tiny vs. Medium & 0.0205 & 0.79 \\
+ & Tiny vs. Large-v3 & 0.0250 & 0.84 \\
+ & Base vs. Large-v3 & 0.0443 & 0.75 \\
+\midrule
+\multirow{14}{*}{BERTScore ($\uparrow$)}
+ & Tiny vs. Large-v3 & 0.0022 & 0.88 \\
+ & Base vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Medium & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Tiny vs. Base & 0.0035 & 0.87 \\
+ & Tiny vs. Small & 0.0120 & 0.82 \\
+ & Base vs. Large-v3 & 0.0120 & 0.82 \\
+ & Tiny vs. Large-v1 & 0.0159 & 0.81 \\
+ & Tiny vs. Large-v2 & 0.0159 & 0.81 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0159 & 0.88 \\
+ & Tiny vs. Medium & 0.0197 & 0.79 \\
+\midrule
+\multirow{18}{*}{SeMaScore ($\uparrow$)}
+ & Tiny vs. Base & 0.0022 & 0.88 \\
+ & Tiny vs. Small & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v1 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v2 & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Tiny vs. Large-v3 & 0.0034 & 0.87 \\
+ & Wav2Vec2 vs. Medium & 0.0034 & 0.87 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0034 & 0.87 \\
+ & Tiny vs. Medium & 0.0107 & 0.82 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0157 & 0.88 \\
+ & Base vs. Large-v1 & 0.0267 & 0.78 \\
+ & Base vs. Large-v3 & 0.0267 & 0.78 \\
+ & Base vs. Large-v3-turbo & 0.0267 & 0.78 \\
+ & Base vs. Large-v2 & 0.0305 & 0.76 \\
+ & Base vs. Small & 0.0450 & 0.78 \\
+\midrule
+\multirow{8}{*}{FH-Index ($\uparrow$)}
+ & Tiny vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Small vs. Wav2Vec2 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v1 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3 & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Large-v3-turbo & 0.0022 & 0.88 \\
+ & Wav2Vec2 vs. Medium & 0.0057 & 0.85 \\
+ & Wav2Vec2 vs. Large-v2 & 0.0057 & 0.85 \\
+ & Base vs. Wav2Vec2 & 0.0089 & 0.84 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table*}

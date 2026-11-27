@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\caption{Percentage of subtitles meeting the UNE 153010:2012 limits with three segmentation strategies (mean of 15 videos). Length and CPS: at most two lines of 37 characters and 15 characters per second; All limits: also a display time between 1 and 6~s; $>$6~s: subtitles displayed for more than 6~s.}
+\label{tab:subtitles}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrccccccccc}
+\hline
+ & & \multicolumn{3}{c}{Length and CPS (\%) ($\uparrow$)} & \multicolumn{3}{c}{All limits (\%) ($\uparrow$)} & \multicolumn{3}{c}{$>$6~s (\%) ($\downarrow$)} \\
+Model & Params (M) & Native & Rules & UNE & Native & Rules & UNE & Native & Rules & UNE \\
+\hline
+Tiny & 39 & 16.7 & 54.5 & 73.3 & 13.8 & 51.1 & 73.3 & 52.3 & 9.7 & 0.0 \\
+Base & 74 & 17.2 & 56.5 & 77.4 & 16.1 & 54.3 & 77.0 & 55.5 & 14.2 & 0.0 \\
+Small & 244 & 22.5 & 56.1 & 74.3 & 21.0 & 54.2 & 74.3 & 46.6 & 10.1 & 0.0 \\
+Wav2Vec2 & 317 & 67.4 & 68.3 & 81.5 & 33.6 & 37.4 & 79.8 & 41.6 & 37.4 & 0.6 \\
+Medium & 769 & 29.1 & 57.8 & 78.3 & 25.7 & 52.4 & 78.3 & 44.5 & 16.2 & 0.0 \\
+Large-v1 & 1550 & 18.4 & 60.3 & 78.5 & 16.3 & 57.4 & 78.5 & 57.3 & 14.5 & 0.0 \\
+Large-v2 & 1550 & 24.8 & 60.8 & 73.6 & 19.7 & 56.3 & 73.6 & 46.1 & 9.8 & 0.0 \\
+Large-v3 & 1550 & 34.3 & 62.8 & 72.6 & 31.7 & 59.0 & 72.3 & 38.6 & 9.7 & 0.0 \\
+Large-v3-turbo & 809 & 37.2 & 57.4 & 74.2 & 33.2 & 54.3 & 74.2 & 31.2 & 7.9 & 0.0 \\
+\hline
+\end{tabular}
+\end{table*}

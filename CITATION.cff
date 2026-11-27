@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "Multidimensional evaluation of ASR-based subtitling in Spanish"
+authors:
+  - family-names: "López-Hernández"
+    given-names: "Jesús Leonardo"
+  - family-names: "González-Carrasco"
+    given-names: "Israel"
+  - family-names: "López-Cuadrado"
+    given-names: "José Luis"
+  - family-names: "Guzmán-Colomina"
+    given-names: "Ismael"
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Multidimensional Evaluation Framework for Accessibility-Oriented Automatic Subtitling in ASR Systems"
+  journal: "IEEE Access"
+  year: 2026
+  authors:
+    - family-names: "López-Hernández"
+      given-names: "Jesús Leonardo"
+    - family-names: "González-Carrasco"
+      given-names: "Israel"
+    - family-names: "López-Cuadrado"
+      given-names: "José Luis"
+    - family-names: "Guzmán-Colomina"
+      given-names: "Ismael"

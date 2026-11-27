@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\centering
+\caption{Evaluated ASR configurations. Layers: encoder / decoder.}
+\label{tab:models}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l>{\raggedright\arraybackslash}p{3.4cm}cr}
+\hline
+Configuration & Checkpoint & Layers & Params (M) \\
+\hline
+Tiny & Systran/\allowbreak faster-whisper-tiny & 4 / 4 & 39 \\
+Base & Systran/\allowbreak faster-whisper-base & 6 / 6 & 74 \\
+Small & Systran/\allowbreak faster-whisper-small & 12 / 12 & 244 \\
+Medium & Systran/\allowbreak faster-whisper-medium & 24 / 24 & 769 \\
+Large-v1 & Systran/\allowbreak faster-whisper-large-v1 & 32 / 32 & 1550 \\
+Large-v2 & Systran/\allowbreak faster-whisper-large-v2 & 32 / 32 & 1550 \\
+Large-v3 & Systran/\allowbreak faster-whisper-large-v3 & 32 / 32 & 1550 \\
+Large-v3-turbo & mobiuslabsgmbh/\allowbreak faster-whisper-large-v3-turbo & 32 / 4 & 809 \\
+Wav2Vec2 & jonatasgrosman/\allowbreak wav2vec2-large-xlsr-53-spanish + 5-gram KenLM & 24 / CTC & 317 \\
+\hline
+\end{tabular}
+\end{table}

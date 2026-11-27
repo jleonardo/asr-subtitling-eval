@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\caption{Results of the nine ASR configurations without post-processing (mean $\pm$ standard deviation, 15 videos). RTF: real-time factor. Best values in bold. The negative FH-Index of Wav2Vec2 is due to its lack of punctuation (Section~\ref{sec:r111}).}
+\label{tab:main_results}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrccccccccc}
+\hline
+Model & Params (M) & Time (s) & RTF & CER ($\downarrow$) & WER ($\downarrow$) & Punc-WER ($\downarrow$) & PC-WER ($\downarrow$) & BERTScore ($\uparrow$) & SeMaScore ($\uparrow$) & FH-Index ($\uparrow$) \\
+\hline
+Tiny & 39 & 2.8 $\pm$ 1.6 & 0.03 $\pm$ 0.01 & 0.143 $\pm$ 0.092 & 0.310 $\pm$ 0.165 & 0.350 $\pm$ 0.156 & 0.375 $\pm$ 0.162 & 0.934 $\pm$ 0.030 & 0.854 $\pm$ 0.089 & 70.8 $\pm$ 18.7 \\
+Base & 74 & 4.7 $\pm$ 2.9 & 0.05 $\pm$ 0.01 & 0.082 $\pm$ 0.064 & 0.188 $\pm$ 0.127 & 0.231 $\pm$ 0.130 & 0.259 $\pm$ 0.138 & 0.954 $\pm$ 0.024 & 0.914 $\pm$ 0.064 & 54.0 $\pm$ 49.1 \\
+Small & 244 & 11.8 $\pm$ 7.3 & 0.11 $\pm$ 0.01 & 0.046 $\pm$ 0.034 & 0.097 $\pm$ 0.060 & 0.147 $\pm$ 0.081 & 0.168 $\pm$ 0.085 & 0.974 $\pm$ 0.014 & 0.960 $\pm$ 0.028 & 63.5 $\pm$ 27.6 \\
+Wav2Vec2 & 317 & 9.2 $\pm$ 9.6 & 0.08 $\pm$ 0.02 & 0.148 $\pm$ 0.151 & 0.272 $\pm$ 0.173 & 0.374 $\pm$ 0.158 & 0.424 $\pm$ 0.147 & 0.903 $\pm$ 0.088 & 0.850 $\pm$ 0.143 & $-$93.1 $\pm$ 116.5 \\
+Medium & 769 & 35.7 $\pm$ 24.4 & 0.34 $\pm$ 0.05 & 0.061 $\pm$ 0.056 & 0.097 $\pm$ 0.068 & 0.148 $\pm$ 0.083 & 0.172 $\pm$ 0.093 & 0.975 $\pm$ 0.014 & 0.957 $\pm$ 0.031 & 61.4 $\pm$ 36.4 \\
+Large-v1 & 1550 & 63.1 $\pm$ 40.4 & 0.60 $\pm$ 0.08 & 0.041 $\pm$ 0.030 & 0.073 $\pm$ 0.047 & 0.129 $\pm$ 0.077 & 0.152 $\pm$ 0.089 & 0.976 $\pm$ 0.014 & 0.968 $\pm$ 0.023 & 68.4 $\pm$ 15.0 \\
+Large-v2 & 1550 & 69.6 $\pm$ 49.0 & 0.65 $\pm$ 0.10 & 0.046 $\pm$ 0.034 & 0.068 $\pm$ 0.048 & 0.120 $\pm$ 0.072 & 0.138 $\pm$ 0.082 & 0.977 $\pm$ 0.014 & 0.969 $\pm$ 0.023 & 59.3 $\pm$ 35.9 \\
+Large-v3 & 1550 & 84.5 $\pm$ 68.6 & 0.81 $\pm$ 0.51 & \textbf{0.039 $\pm$ 0.038} & \textbf{0.062 $\pm$ 0.048} & \textbf{0.101 $\pm$ 0.052} & \textbf{0.115 $\pm$ 0.055} & \textbf{0.983 $\pm$ 0.012} & \textbf{0.974 $\pm$ 0.020} & \textbf{73.3 $\pm$ 13.1} \\
+Large-v3-turbo & 809 & 34.4 $\pm$ 18.3 & 0.34 $\pm$ 0.09 & 0.048 $\pm$ 0.066 & 0.071 $\pm$ 0.076 & 0.126 $\pm$ 0.098 & 0.144 $\pm$ 0.107 & 0.974 $\pm$ 0.041 & 0.964 $\pm$ 0.057 & 65.3 $\pm$ 25.4 \\
+\hline
+\end{tabular}}
+\end{table*}
