@@ -1,8 +1,5 @@
 # Multidimensional evaluation of ASR-based subtitling in Spanish
 
-> This repository will be made public upon publication. During the review process it is provided to the
-> reviewers as supplementary material.
-
 Code, configuration and results accompanying the paper:
 
 > J. L. López-Hernández, I. González-Carrasco, J. L. López-Cuadrado and I. Guzmán-Colomina,
